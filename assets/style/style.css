@@ -159,7 +159,7 @@ button {
   background-color: #005BAC;
   transform: translateX(100%);
   opacity: 0;
-  transition: 1s;
+  transition: 0.5s;
 }
 @media (min-width: 768px) {
   .header__links {
@@ -168,6 +168,7 @@ button {
          column-gap: 4.8rem;
     padding: 0;
     background-color: #fff;
+    transition: unset;
   }
 }
 .header__links ul {
@@ -250,7 +251,12 @@ button {
     height: 6.1rem;
     font-size: 2rem;
     color: #FFF;
-    background-color: #0271E0;
+    background: linear-gradient(to right, #0271E0, #53A2F0);
+  }
+}
+@media (min-width: 768px) {
+  .header__links-btn:hover {
+    opacity: 0.5;
   }
 }
 
@@ -264,5 +270,11 @@ button {
 .open-menu {
   opacity: 1;
   transform: translateX(0);
-  transition: 1s;
+  transition: 0.5s;
+}
+
+@media (min-width: 768px) {
+  .open-menu {
+    transition: unset;
+  }
 }/*# sourceMappingURL=style.css.map */
