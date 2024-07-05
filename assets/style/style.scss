@@ -290,6 +290,32 @@ button {
     }
 }
 
+/*change-btn*/
+.change-btn {
+    position: relative;
+    width: 4.7rem;
+    height: 4.7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.change-btn .header__hamburger-menu-line {
+    position: absolute;
+}
+
+.change-btn .header__hamburger-menu-line:nth-child(1) {
+    transform: rotate(45deg);
+    margin-bottom: 0;
+}
+
+.change-btn .header__hamburger-menu-line:nth-child(2) {
+    display: none;
+}
+
+.change-btn .header__hamburger-menu-line:nth-child(3) {
+    transform: rotate(-45deg);
+}
 /*header-links　フェードイン*/
 .open-menu {
     opacity: 1;
